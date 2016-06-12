@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Employed.in | Online Job Portal</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/job.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"></div>
+      <div class="nav-bar">
+        <div class="nav-icon nav-active"><span class="fa fa-home"></span> HOME</div>
+        <div class="nav-icon"><span class="fa fa-bullhorn"></span> JOBS</div>
+        <div class="nav-icon"><span class="fa fa-briefcase"></span> EMPLOYERS</div>
+        <div class="nav-icon"><span class="fa fa-phone"></span> CONTACT</div>
+        <div class="nav-search"><span class="fa fa-search">&nbsp;</span><input type="textbox" class="search-box" placeholder="Search"></input></div>
+      </div> 
+    </div>
+
+    <div class="content">
+      <div class="banner">
+        <div class="sign-in-box">
+          <div class="sign-in-title">SIGN IN</div>
+          <div class="sign-in-input">
+            <input type="textbox" class="input-box" placeholder="Email"></input>
+            <input type="password" class="input-box" placeholder="Password"></input>
+            <button class="sign-in-button">Sign In</button>
+          </div>
+        </div>
+      </div>
+      <div class="details">
+        <div class="details-icon">25,643 Registered Members</div>
+        <div class="details-icon">22,347 Jobs Found</div>
+        <div class="details-icon">10,345 Awesome Companies</div>
+        <button class="sign-up-button" onmousedown="toggleOverlay()">Sign Up &nbsp;<span class="fa fa-chevron-right"></span></button>
+      </div>
+    </div>
+
+
+    <div id="overlay"></div>
+    <div id="specialBox"> 
+      <div class="overlay-title"><span class="fa fa-check"></span> Register an Account<br>
+        <span class="overlay-title-decp">You'll be able to post your resume, apply for a job, add companies profiles and post job offers!</span>
+      </div> 
+      <div class="overlay-form">
+        <div class="overlay-form-row">
+          <div class="overlay-form-title">Username:</div>
+            <input type="text" class="overlay-input-box"></input>
+        </div>
+        <div class="overlay-form-row">
+          <div class="overlay-form-title">Email:</div>
+          <input type="text" class="overlay-input-box"></input>
+        </div>
+        <div class="overlay-form-row">
+          <div class="overlay-form-title">Password:</div>
+          <input type="password" class="overlay-input-box"></input>
+        </div>
+        <div class="overlay-form-row">
+          <div class="overlay-form-title">Retype Password:</div>
+          <input type="password" class="overlay-input-box"></input>
+        </div>
+          <button class="register-button">REGISTER</button>
+      </div>
+      <div class="register-with">
+        Sign up with your social media account.<br>
+        <button class="g-plus-register"><span class="fa fa-google-plus-square"></span> &nbsp;GOOGLE+</button><br>
+        <button class="fb-register"><span class="fa fa-facebook-square"></span> &nbsp;FACEBOOK</button><br>
+        <button class="twitter-register"><span class="fa fa-twitter-square"></span> &nbsp;TWITTER</button><br>
+      </div>
+      <button class="close-overlay" onmousedown="toggleOverlay()">X</button> 
+    </div>
+
+
+    <div class="widget">
+        <div class="social-icon" id="facebook"><span class="fa fa-facebook"></span></div><br>
+        <div class="social-icon" id="twitter"><span class="fa fa-twitter"></span></div><br>
+        <div class="social-icon" id="linkedin"><span class="fa fa-linkedin"></span></div><br>
+        <div class="social-icon" id="gplus"><span class="fa fa-google-plus"></span></div>
+    </div>
+
+    <div class="search-menu-content">
+      <div class="search-menu">
+        <div class="search-title">
+          <span class="fa fa-search"></span> Search
+        </div>
+        <div class="search-decp">Use our awesome search tool to find jobs and companies.</div><hr class="search-hr"/>
+        <div class="tabbedPanels">
+          <div class="tabs">
+            <div class="search-tabs"><a href="#panel1" class="active"><span class="fa fa-bullhorn"></span> JOBS</a></div>
+            <div class="search-tabs"><a href="#panel2"><span class="fa fa-briefcase"></span> COMPANIES</a></div>
+          </div>
+          <div class="panelContainer">
+            <div class="panel" id="panel1">
+              <input type="text" class="panel-search-box" placeholder="Job Profile"></input>
+              <input type="text" class="panel-search-box" placeholder="Location"></input>
+              <button class="panel-search-button">SEARCH <span class="fa fa-search"></span></button>
+            </div>
+            <div class="panel" id="panel2">
+              <input type="text" class="panel-search-box" placeholder="Company Name"></input>
+              <input type="text" class="panel-search-box" placeholder="Location"></input>
+              <button class="panel-search-button">SEARCH <span class="fa fa-search"></span></button>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+
+    <div class="company-showcase">
+      <ul id="marquee-horizontal">
+        <li><img src="./images/infosys.jpg"/></li>
+        <li><img src="./images/accenture.gif"/></li>
+        <li><img src="./images/wipro.gif"/></li>
+        <li><img src="./images/tcs.gif"/></li>
+        <li><img src="./images/hcl.gif"/></li>
+        <li><img src="./images/softek.gif"/></li>
+        <li><img src="./images/cognizant.gif"/></li>
+        <li><img src="./images/cisco.gif"/></li>
+        <li><img src="./images/microchip.gif"/></li>
+        <li><img src="./images/genpact.gif"/></li>
+      </ul>  
+    </div>
+
+
+    <div class="footer"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.marquee.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        $('#panel2').hide();
+        $('.tabs a').click(function(){
+          $this = $(this);
+          $('.panel').hide();
+          $('.tabs a.active').removeClass('active');
+          $this.addClass('active').blur();
+          var panel = $this.attr('href');
+          $(panel).fadeIn(250);
+          return false; 
+        });
+        $('.tabs li:first a').click();
+
+        $('#marquee-horizontal').marquee({direction:'horizontal', delay:0, timing:10});  
+
+      });
+
+
+      function toggleOverlay(){ 
+        var overlay = document.getElementById('overlay'); 
+        var specialBox = document.getElementById('specialBox'); 
+        overlay.style.opacity = .8; 
+        if(overlay.style.display == "block"){ 
+          overlay.style.display = "none"; 
+          specialBox.style.display = "none"; 
+        } 
+        else { 
+          overlay.style.display = "block"; 
+          specialBox.style.display = "block"; 
+        } 
+      }
+
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
